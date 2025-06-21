@@ -59,36 +59,7 @@ setInterval(sectionTwocall,3000)
 
 
 //
-.sliders{
- transition:transfrom 0.5 ease;
-transition
-}
-let sliders=document.getElementById("slider-box")
-let totalslider=sliders.childrend.length
-cruentval=0;
-
-function myfunction(){
-  cruentval+=5
-  if(cruentval >= totalslider)cruentval=0;
-  let funtotal=cruentval*20
-  sliders.style.transform=`translateX(-${funtotal}%)`
-
-}
-
-setInterval(myfunction,3000)
 
 //section two end
 
 
-// let slides= document.querySelectorAll(".slide");
-
-// let currentIndex=0;
-// let totalSlides=slides.length;
-
-
-// function showSlider(index) {
-//     slides.forEach((slides,i)=>{
-        
-//     })
-    
-// }
