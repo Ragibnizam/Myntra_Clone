@@ -6,7 +6,82 @@ body {
   overflow-x: hidden;
 }
 
+/* header start */
+/* men section */
+.men-section{
+  position: fixed;
+  top: 100px;
 
+  left: 8%;
+  background-color: #ffffff;
+  width: 60%;
+  height: 450px;
+  z-index: 2;
+ padding: 0 20px;
+ display: none;
+}
+.men-sectionIcon{
+  width: 50px;
+  margin-left: 8px;
+  height: 5px;
+  background-color: rgb(246, 86, 0);
+}
+.men-container ul li a{
+  color: #494b52;
+  font-size: 13px;
+}
+.men-container ul li a:hover{
+  color: #000000;
+  font-weight: 600;
+}
+/* women section */
+  .women-section{
+  position: fixed;
+  top: 100px;
+  left: 7%;
+  background-color: #ffffff;
+  width: 65%;
+  height: 450px;
+  z-index: 2;
+ padding: 0 20px;
+ display: none;
+}
+.women-sectionIcon{
+  width: 60px;
+  margin-left: 80px;
+  height: 5px;
+  background-color: rgb(249, 107, 246);
+}
+.women-container ul li a{
+  color: #494b52;
+  font-size: 13px;
+}
+.women-container ul li a:hover{
+  color: #000000;
+  font-weight: 600;
+}
+/* search_box */
+.search_box_container{
+  position: relative;
+}
+.search_box{
+  display: none;
+  width: 33%;
+  background-color:white ;
+  box-shadow: 1px 4px 8px black;
+  height: 300px;
+  position: fixed;
+  top: 70px;
+  right:250px;
+  padding: 20px;
+  font-size: 14px;
+  color:#4e525e;
+  list-style: none;
+  z-index: 9999;
+}
+/* header end */
+
+/* 
 /* section one start */
 
 #slider-container{
@@ -34,30 +109,90 @@ body {
 
  /* section-two end  */
 
- /* coupon */
+ /*vertical  coupon */
  .siteCoupon{
-  display: inline;
   position: fixed;
-  top: 50%;
+  top: 70%;
   right: 0;
-  width: 10%;
+  transform: translateY(-50%);
+  width: 50px;
   height: 300px;
   background-color: #474c5c;
-  color: white;
-  padding: 8px;
-  text-align: end;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
  }
- .side-banner {
-  transform:  rotate(-90deg);
-  text-align: start;
- 
+ .siteCoupon:hover {
+  cursor: pointer;
 }
- /* coupon end*/
+
+ .arrow-icon {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 16px;
+  transform: rotate(0deg);
+}
+
+ .side-banner {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg); /* reverse text */
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: center;
+  background-color: #474c5c;
+
+}
+/*  */
+.siteCouponWidth{
+  position: fixed;
+  top: 70%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 300px;
+  background-color: #474c5c;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  color: white;
+  padding-left:  10px;
+  z-index: 1;
+ }
+ .coupon_hidden_De{
+  display:none;
+  padding: 40px;
+  background-image: linear-gradient(to right, rgb(252,230,243), rgb(255,249,229));
+  color: black;
+  width: 100%;
+  height: 100%;
+  margin-left: 10px;
+ }
+ .coupon_hidden_De p{
+  font-size: 12px;
+  font-weight: 700;
+ }
+ .siteCoupon_btn{
+  background-color: #FE3F6D;
+  color: #f9fafa;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin: 18px ;
+  text-decoration: none;
+  display: block;
+  
+ }
+ /*vertical  coupon end*/
 
  footer{
-
- background-color:#f9fafa ;
-}
+    background-color:#f9fafa ;
+  }
 .footer-list-section ul{
   font-size: 13px;
 }
